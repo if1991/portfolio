@@ -1,0 +1,326 @@
+.hero-section {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  overflow: hidden;
+  padding: 140px 0 105px;
+  background: transparent;
+}
+
+.hero-section::before,
+.hero-section::after {
+  content: none;
+}
+
+.hero-layout {
+  display: grid;
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  grid-template-columns:
+    minmax(0, 1.1fr)
+    minmax(340px, 440px);
+  gap: clamp(54px, 7vw, 96px);
+  align-items: center;
+}
+
+/* =========================================================
+   Linker Textbereich
+   ========================================================= */
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  min-width: 0;
+  transform: translateX(-30px);
+}
+
+.hero-kicker {
+  margin: 0 0 24px;
+  color: var(--color-green-deep);
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero-inner h1 {
+  max-width: 760px;
+  margin: 0;
+  color: var(--color-green-deep);
+  font-size: clamp(4.4rem, 8vw, 8rem);
+  line-height: 0.9;
+  letter-spacing: -0.072em;
+}
+
+.hero-subtitle {
+  max-width: 720px;
+  margin: 34px 0 0;
+  color: var(--color-green-deep);
+  font-size: clamp(1.2rem, 1.8vw, 1.58rem);
+  line-height: 1.56;
+}
+
+.hero-description {
+  max-width: 700px;
+  margin: 24px 0 0;
+  color: var(--color-muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 36px;
+}
+
+/* =========================================================
+   Rechter Bildbereich
+   ========================================================= */
+
+.hero-visual {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  isolation: isolate;
+}
+
+.hero-visual-backdrop,
+.hero-photo-frame,
+.hero-info-card {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+/* Farbige Fläche hinter dem Foto */
+
+.hero-visual-backdrop {
+  z-index: 1;
+  width: 245px;
+  height: 285px;
+  border-radius: 10px;
+  background:
+    linear-gradient(
+      145deg,
+      #8eaaa0,
+      #b8c8b8
+    );
+  transform: translate(52px, 45px);
+}
+
+/* Weißer Rahmen und Foto */
+
+.hero-photo-frame {
+  z-index: 2;
+  width: 255px;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(35, 57, 42, 0.1);
+  box-shadow:
+    0 26px 58px rgba(35, 57, 42, 0.17),
+    0 8px 20px rgba(35, 57, 42, 0.08);
+}
+
+.hero-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 22%;
+}
+
+/* =========================================================
+   Informationskachel
+   ========================================================= */
+
+.hero-info-card {
+  z-index: 3;
+  width: min(345px, 82%);
+  align-self: end;
+  justify-self: start;
+  padding: 16px 19px;
+  border: 1px solid rgba(40, 58, 45, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 253, 246, 0.98);
+  color: #1f3929;
+  box-shadow:
+    0 20px 42px rgba(20, 34, 27, 0.2);
+  transform: translate(-55px, -10px);
+}
+
+.hero-info-card .hero-info-label {
+  margin: 0 0 7px;
+  color: #52675a;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.hero-info-card h3 {
+  margin: 0 0 8px;
+  color: #1f3929;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.hero-info-card p {
+  margin: 0;
+  color: #596b60;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   Tablet
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .hero-section {
+    min-height: auto;
+    padding: 125px 0 90px;
+  }
+
+  .hero-layout {
+    width: min(760px, calc(100% - 48px));
+    grid-template-columns: 1fr;
+    gap: 54px;
+  }
+
+  .hero-inner {
+    width: 100%;
+    transform: none;
+  }
+
+  .hero-visual {
+    width: min(100%, 430px);
+    min-height: auto;
+    margin: 0 auto;
+    padding-top: 12px;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "image"
+      "card";
+    row-gap: 22px;
+  }
+
+  .hero-visual-backdrop,
+  .hero-photo-frame {
+    grid-area: image;
+  }
+
+  .hero-info-card {
+    grid-area: card;
+    width: min(100%, 360px);
+    align-self: auto;
+    justify-self: center;
+    transform: none;
+  }
+
+  .hero-visual-backdrop {
+    width: 220px;
+    height: 255px;
+    transform: translate(38px, 20px);
+  }
+
+  .hero-photo-frame {
+    width: 230px;
+  }
+}
+
+/* =========================================================
+   Smartphone
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .hero-section {
+    padding: 108px 0 76px;
+  }
+
+  .hero-layout {
+    width: min(560px, calc(100% - 32px));
+    gap: 42px;
+  }
+
+  .hero-inner h1 {
+    font-size: clamp(3.3rem, 17vw, 5rem);
+  }
+
+  .hero-subtitle {
+    margin-top: 24px;
+    font-size: 1.08rem;
+    line-height: 1.52;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    line-height: 1.72;
+  }
+
+  .hero-actions {
+    gap: 12px;
+    margin-top: 30px;
+  }
+
+  .hero-visual {
+    width: min(100%, 340px);
+    row-gap: 20px;
+  }
+
+  .hero-visual-backdrop {
+    width: 185px;
+    height: 215px;
+    transform: translate(30px, 16px);
+  }
+
+  .hero-photo-frame {
+    width: 200px;
+    padding: 8px;
+  }
+
+  .hero-info-card {
+    width: 100%;
+    max-width: 320px;
+    padding: 16px 18px;
+  }
+}
+
+/* =========================================================
+   Sehr kleine Smartphones
+   ========================================================= */
+
+@media (max-width: 420px) {
+  .hero-inner h1 {
+    font-size: clamp(3rem, 16vw, 4.3rem);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-visual {
+    width: 100%;
+  }
+
+  .hero-photo-frame {
+    width: 185px;
+  }
+
+  .hero-visual-backdrop {
+    width: 172px;
+    height: 198px;
+    transform: translate(25px, 14px);
+  }
+}

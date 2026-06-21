@@ -1,0 +1,556 @@
+:root.font-large {
+  --font-scale: 1.12;
+}
+
+:root.font-xlarge {
+  --font-scale: 1.22;
+}
+
+:root.dark-mode {
+  --color-page: #050806;
+  --color-page-soft: #0a120d;
+  --color-card: rgba(10, 18, 13, 0.9);
+  --color-card-strong: #08100b;
+  --color-text: #f6f1e7;
+  --color-muted: #c8d7c5;
+  --color-soft: #122016;
+  --color-soft-strong: #1d3725;
+  --color-green: #9dff9f;
+  --color-green-dark: #7be17d;
+  --color-green-deep: #f6f1e7;
+  --color-border: rgba(157, 255, 159, 0.18);
+  --color-shadow: rgba(0, 0, 0, 0.55);
+}
+
+:root.dark-mode body {
+  color: #f4f0e6;
+}
+
+:root.dark-mode .page {
+  background:
+    radial-gradient(circle at 18% 12%, rgba(79, 255, 130, 0.12), transparent 28%),
+    radial-gradient(circle at 84% 18%, rgba(130, 255, 160, 0.08), transparent 24%),
+    radial-gradient(circle at 70% 78%, rgba(75, 180, 95, 0.1), transparent 30%),
+    linear-gradient(180deg, #050806 0%, #08100b 45%, #030504 100%);
+}
+
+:root.dark-mode .navigation-bar {
+  background: rgba(18, 30, 23, 0.78);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+}
+
+:root.dark-mode .theme-toggle {
+  background: rgba(243, 239, 227, 0.08);
+  color: #f3efe3;
+}
+
+:root.dark-mode .theme-toggle:hover {
+  background: rgba(159, 202, 159, 0.16);
+}
+
+:root.dark-mode .accessibility-button {
+  background: rgba(243, 239, 227, 0.08);
+  color: #f3efe3;
+}
+
+:root.dark-mode .accessibility-button:hover {
+  background: rgba(159, 202, 159, 0.16);
+}
+
+:root.dark-mode .content-section h2,
+:root.dark-mode .hero-inner h1,
+:root.dark-mode .case-study-copy h4,
+:root.dark-mode .project-text h3,
+:root.dark-mode .project-details h3,
+:root.dark-mode .skill-card h3,
+:root.dark-mode .contact-card h2,
+:root.dark-mode .about-heading h2,
+:root.dark-mode .case-study-privacy-note h4 {
+  color: #f6f1e7;
+}
+
+:root.dark-mode .content-section p,
+:root.dark-mode .hero-subtitle,
+:root.dark-mode .hero-description,
+:root.dark-mode .case-study-copy p,
+:root.dark-mode .case-study-copy li,
+:root.dark-mode .project-details li,
+:root.dark-mode .skill-card li,
+:root.dark-mode .case-study-privacy-note p,
+:root.dark-mode .about-text-card p,
+:root.dark-mode .contact-card p {
+  color: #d8e3d3;
+}
+
+:root.dark-mode .section-kicker,
+:root.dark-mode .hero-kicker,
+:root.dark-mode .case-study-number,
+:root.dark-mode .project-number {
+  color: #a8d5a2;
+}
+:root.dark-mode .hero-inner h1 {
+  text-shadow:
+    0 0 24px rgba(157, 255, 159, 0.12),
+    0 0 52px rgba(157, 255, 159, 0.08);
+}
+
+:root.dark-mode .hero-kicker::after {
+  content: "  🌙";
+}
+.section-kicker::after {
+  content: none;
+}
+
+:root.dark-mode .project-number::before,
+:root.dark-mode .case-study-number::before {
+  content: "⚡ ";
+}
+
+:root.dark-mode .skill-card,
+:root.dark-mode .project-card,
+:root.dark-mode .contact-card,
+:root.dark-mode .about-text-card,
+:root.dark-mode .case-study-copy,
+:root.dark-mode .case-study-privacy-note {
+  background: rgba(20, 34, 25, 0.88);
+  border-color: rgba(216, 227, 211, 0.16);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.32);
+}
+
+:root.dark-mode .skill-card--open {
+  background: rgba(24, 42, 30, 0.96);
+  box-shadow: 0 34px 100px rgba(0, 0, 0, 0.42);
+}
+
+:root.dark-mode .skill-toggle-button {
+  background: #8fb98d;
+  color: #102016;
+  border-color: rgba(216, 227, 211, 0.24);
+}
+
+:root.dark-mode .skill-toggle-button:hover {
+  background: #a8d5a2;
+}
+
+:root.dark-mode .skill-card-details {
+  border-top-color: rgba(216, 227, 211, 0.16);
+}
+
+:root.dark-mode .project-details {
+  background: linear-gradient(
+    145deg,
+    rgba(24, 42, 30, 0.94),
+    rgba(13, 27, 18, 0.9)
+  );
+  border-color: rgba(216, 227, 211, 0.14);
+}
+
+:root.dark-mode .project-title-icon {
+  background: rgba(243, 239, 227, 0.08);
+  border-color: rgba(216, 227, 211, 0.22);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+}
+
+:root.dark-mode .project-tech-tag img {
+  filter: saturate(1.08);
+}
+
+:root.dark-mode .hero-tags span,
+:root.dark-mode .project-tags span {
+  background: rgba(246, 241, 231, 0.08);
+  color: #f4f0e6;
+  border-color: rgba(216, 227, 211, 0.18);
+}
+
+:root.dark-mode .secondary-button {
+  background: rgba(243, 239, 227, 0.06);
+  color: #f3efe3;
+}
+
+:root.dark-mode .primary-button {
+  background: #8fb98d;
+  color: #102016;
+}
+
+:root.dark-mode .case-study-privacy-note {
+  background: rgba(19, 32, 24, 0.94);
+}
+
+:root.dark-mode .hero-subtitle {
+  color: #d8e3d3;
+}
+
+:root.dark-mode .hero-description {
+  color: #c5d3c2;
+}
+
+:root.dark-mode .case-study-image-hint {
+  background: rgba(20, 34, 25, 0.96);
+  color: #f6f1e7;
+  border: 1px solid rgba(216, 227, 211, 0.28);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34);
+}
+
+:root.dark-mode .image-lightbox-close {
+  background: rgba(20, 34, 25, 0.96);
+  color: #f6f1e7;
+  border: 1px solid rgba(216, 227, 211, 0.32);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34);
+}
+
+:root.dark-mode .image-lightbox-close:hover,
+:root.dark-mode .case-study-image-hint:hover {
+  background: #8fb98d;
+  color: #102016;
+}
+
+:root.high-contrast {
+  --color-page: #ffffff;
+  --color-page-soft: #ffffff;
+  --color-card: #ffffff;
+  --color-card-strong: #ffffff;
+  --color-text: #000000;
+  --color-muted: #000000;
+  --color-soft: #ffffff;
+  --color-soft-strong: #000000;
+  --color-green: #000000;
+  --color-green-dark: #000000;
+  --color-green-deep: #000000;
+  --color-border: #000000;
+  --color-shadow: transparent;
+}
+:root.dark-mode .primary-button {
+  background: linear-gradient(135deg, #7be17d, #b7ffb8);
+  color: #061008;
+  box-shadow:
+    0 0 18px rgba(123, 225, 125, 0.35),
+    0 18px 42px rgba(0, 0, 0, 0.45);
+}
+
+:root.dark-mode .primary-button:hover {
+  box-shadow:
+    0 0 26px rgba(123, 225, 125, 0.55),
+    0 22px 54px rgba(0, 0, 0, 0.5);
+}
+
+:root.dark-mode .secondary-button,
+:root.dark-mode .theme-toggle,
+:root.dark-mode .accessibility-button {
+  background: rgba(246, 241, 231, 0.04);
+  color: #f6f1e7;
+  border-color: rgba(157, 255, 159, 0.22);
+  box-shadow: 0 0 0 rgba(157, 255, 159, 0);
+}
+
+:root.dark-mode .secondary-button:hover,
+:root.dark-mode .theme-toggle:hover,
+:root.dark-mode .accessibility-button:hover {
+  background: rgba(157, 255, 159, 0.1);
+  color: #b7ffb8;
+  box-shadow: 0 0 18px rgba(157, 255, 159, 0.22);
+}
+:root.dark-mode .skill-card,
+:root.dark-mode .project-card,
+:root.dark-mode .contact-card,
+:root.dark-mode .about-text-card,
+:root.dark-mode .case-study-copy,
+:root.dark-mode .case-study-privacy-note {
+  background:
+    linear-gradient(145deg, rgba(13, 26, 17, 0.94), rgba(5, 10, 7, 0.92));
+  border-color: rgba(157, 255, 159, 0.16);
+  box-shadow:
+    0 28px 80px rgba(0, 0, 0, 0.55),
+    0 0 42px rgba(95, 255, 120, 0.06);
+}
+/* Dark Mode: About Cards - neon / night style */
+
+/* Dark Mode: About Cards - cozy color blocks */
+
+:root.dark-mode .about-card {
+  border-color: rgba(255, 247, 233, 0.18);
+  box-shadow:
+    0 28px 90px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 247, 233, 0.04);
+}
+
+:root.dark-mode .about-card::before {
+  content: none;
+}
+
+:root.dark-mode .about-card-main {
+  background: #e093a0;
+}
+
+:root.dark-mode .about-card-status {
+  background: #7997ce;
+}
+
+:root.dark-mode .about-card-interest {
+  background: #ab8bcf;
+}
+
+:root.dark-mode .about-card-work {
+  background: #d3a57b;
+}
+
+:root.dark-mode .about-card-main h2,
+:root.dark-mode .about-card-main .about-main-title,
+:root.dark-mode .about-card-label {
+  color: #fff7e9;
+}
+
+:root.dark-mode .about-card-main p,
+:root.dark-mode .about-card-status p,
+:root.dark-mode .about-card-interest p,
+:root.dark-mode .about-card-work p {
+  color: rgba(255, 247, 233, 0.92);
+}
+
+:root.dark-mode .about-computer-image {
+  filter:
+    drop-shadow(0 10px 18px rgba(0, 0, 0, 0.28))
+    drop-shadow(0 0 10px rgba(255, 247, 233, 0.12));
+}
+
+:root.dark-mode .about-card:hover {
+  box-shadow:
+    0 34px 100px rgba(0, 0, 0, 0.52),
+    0 0 0 1px rgba(255, 247, 233, 0.08);
+}
+
+:root.dark-mode .about-section > .section-kicker {
+  color: #fff7e9;
+  text-shadow:
+    0 0 14px rgba(157, 255, 159, 0.28),
+    0 0 28px rgba(157, 255, 159, 0.12);
+}
+
+:root.dark-mode .about-section > .section-kicker::after {
+  background: #9dff9f;
+  box-shadow: 0 0 16px rgba(157, 255, 159, 0.45);
+}
+:root.dark-mode .about-kicker-icon {
+  filter: drop-shadow(0 0 8px rgba(180, 255, 180, 0.35));
+}
+
+
+/* CONTRAST THEME */
+
+:root.high-contrast body,
+:root.high-contrast .page {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+:root.high-contrast .page {
+  background-image: none !important;
+}
+
+:root.high-contrast * {
+  text-shadow: none !important;
+}
+
+:root.high-contrast h1,
+:root.high-contrast h2,
+:root.high-contrast h3,
+:root.high-contrast h4,
+:root.high-contrast p,
+:root.high-contrast li,
+:root.high-contrast span,
+:root.high-contrast a,
+:root.high-contrast button,
+:root.high-contrast .section-kicker,
+:root.high-contrast .hero-kicker,
+:root.high-contrast .hero-subtitle,
+:root.high-contrast .hero-description,
+:root.high-contrast .content-section p,
+:root.high-contrast .project-number,
+:root.high-contrast .case-study-number {
+  color: #000000 !important;
+}
+
+:root.high-contrast .navigation-bar,
+:root.high-contrast .skill-card,
+:root.high-contrast .project-card,
+:root.high-contrast .contact-card,
+:root.high-contrast .about-text-card,
+:root.high-contrast .case-study-copy,
+:root.high-contrast .case-study-privacy-note,
+:root.high-contrast .project-details,
+:root.high-contrast .case-study-image-card {
+  background: #ffffff !important;
+  border: 3px solid #000000 !important;
+  box-shadow: none !important;
+  color: #000000 !important;
+}
+
+:root.high-contrast .hero-tags span,
+:root.high-contrast .project-tags span {
+  background: #ffffff !important;
+  border: 2px solid #000000 !important;
+  color: #000000 !important;
+  box-shadow: none !important;
+}
+
+:root.high-contrast .primary-button,
+:root.high-contrast .secondary-button,
+:root.high-contrast .theme-toggle,
+:root.high-contrast .accessibility-button {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border: 3px solid #000000 !important;
+  box-shadow: none !important;
+}
+
+:root.high-contrast .primary-button:hover,
+:root.high-contrast .secondary-button:hover,
+:root.high-contrast .theme-toggle:hover,
+:root.high-contrast .accessibility-button:hover {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+
+:root.high-contrast a:focus-visible,
+:root.high-contrast button:focus-visible,
+:root.high-contrast .button:focus-visible {
+  outline: 4px solid #000000 !important;
+  outline-offset: 4px;
+}
+
+:root.high-contrast .project-title-icon {
+  background: #ffffff !important;
+  border: 3px solid #000000 !important;
+  color: #000000 !important;
+  box-shadow: none !important;
+}
+
+:root.high-contrast .project-tech-tag img {
+  filter: none !important;
+}
+
+:root.high-contrast .skill-card,
+:root.high-contrast .skill-card--open {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border: 3px solid #000000 !important;
+  box-shadow: none !important;
+}
+
+:root.high-contrast .skill-toggle-button {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border: 3px solid #000000 !important;
+  box-shadow: none !important;
+}
+
+:root.high-contrast .skill-toggle-button:hover {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+
+:root.high-contrast .skill-card-details {
+  border-top: 3px solid #000000 !important;
+}
+
+:root.high-contrast .about-card,
+:root.high-contrast .about-card-main,
+:root.high-contrast .about-card-status,
+:root.high-contrast .about-card-interest,
+:root.high-contrast .about-card-work {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border: 3px solid #000000 !important;
+  box-shadow: none !important;
+}
+
+:root.high-contrast .about-card-main h2,
+:root.high-contrast .about-card-main .about-main-title,
+:root.high-contrast .about-card-label,
+:root.high-contrast .about-card-main p,
+:root.high-contrast .about-card-status p,
+:root.high-contrast .about-card-interest p,
+:root.high-contrast .about-card-work p {
+  color: #000000 !important;
+}
+
+:root.high-contrast .about-computer-image,
+:root.dark-mode.high-contrast .about-computer-image {
+  filter: none !important;
+}
+
+/* Dark Mode und Kontrastmodus gleichzeitig */
+:root.dark-mode.high-contrast .about-card,
+:root.dark-mode.high-contrast .about-card-main,
+:root.dark-mode.high-contrast .about-card-status,
+:root.dark-mode.high-contrast .about-card-interest,
+:root.dark-mode.high-contrast .about-card-work {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border-color: #000000 !important;
+}
+:root.dark-mode .hero-visual-backdrop {
+  background:
+    linear-gradient(
+      145deg,
+      #456e67,
+      #68897b
+    );
+}
+
+:root.dark-mode .hero-photo-frame {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: #fdfbf4;
+  box-shadow:
+    0 28px 64px rgba(0, 0, 0, 0.42);
+}
+
+:root.dark-mode .hero-info-card {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(246, 243, 234, 0.97);
+  color: #1f3929;
+  box-shadow:
+    0 20px 46px rgba(0, 0, 0, 0.38);
+}
+
+:root.dark-mode .hero-info-label {
+  color: #68786e;
+}
+
+:root.dark-mode .hero-info-card h3 {
+  color: #1f3929;
+}
+
+:root.dark-mode .hero-info-card p {
+  color: #53655a;
+}
+
+/* =========================================================
+   Kontrastmodus
+   ========================================================= */
+
+:root.high-contrast .hero-photo-frame {
+  border: 3px solid #000000;
+  box-shadow: none;
+}
+
+:root.high-contrast .hero-visual-backdrop {
+  border: 3px solid #000000;
+  background: #f4d400;
+}
+
+:root.high-contrast .hero-info-card,
+:root.dark-mode.high-contrast .hero-info-card {
+  border: 3px solid #000000;
+  background: #ffffff;
+  color: #000000;
+  box-shadow: none;
+}
+
+:root.high-contrast .hero-info-label,
+:root.high-contrast .hero-info-card h3,
+:root.high-contrast .hero-info-card p,
+:root.dark-mode.high-contrast .hero-info-label,
+:root.dark-mode.high-contrast .hero-info-card h3,
+:root.dark-mode.high-contrast .hero-info-card p {
+  color: #000000;
+}

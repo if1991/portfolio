@@ -1,0 +1,26 @@
+.contact-section {
+  padding-bottom: 130px;
+}
+
+.contact-card {
+  position: relative;
+  padding: 42px;
+  background:
+    radial-gradient(circle at top right, rgba(199, 220, 186, 0.55), transparent 35%),
+    var(--color-card-strong);
+}
+
+.contact-card h2 {
+  margin-top: 0;
+}
+
+.contact-card p {
+  max-width: 760px;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 36px;
+}

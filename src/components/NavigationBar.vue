@@ -5,11 +5,11 @@
     <div class="navigation-links">
       <a href="#about">Über mich</a>
       <a href="#skills">Skills</a>
-      <a href="#projekt">Projekt</a>
+      <a href="#projekt">Projekte</a>
       <a href="#kontakt">Kontakt</a>
 
       <button class="theme-toggle" type="button" @click="toggleTheme">
-        {{ isDarkMode ? 'Light' : 'Dark' }}
+        {{ isDarkMode ? '☀ Light' : '🌙 Dark' }}
       </button>
       <button class="accessibility-button" type="button" @click="decreaseFontSize">
   A−

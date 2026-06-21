@@ -1,0 +1,23 @@
+a:focus-visible,
+.button:focus-visible {
+  outline: 3px solid rgba(111, 143, 114, 0.45);
+  outline-offset: 4px;
+}
+
+.skill-toggle-button:focus-visible {
+  outline: 4px solid rgba(49, 91, 57, 0.28);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .case-study-copy,
+  .case-study-image-card {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .case-study-image-card:hover img {
+    transform: none;
+  }
+}

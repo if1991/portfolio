@@ -1,0 +1,21 @@
+:root {
+  --color-page: #f7f4ec;
+  --color-page-soft: #eef4e7;
+  --color-card: rgba(255, 255, 250, 0.82);
+  --color-card-strong: #fffdf6;
+  --color-text: #22312a;
+  --color-muted: #5f6f65;
+  --color-soft: #dfe9d5;
+  --color-soft-strong: #c8dcb9;
+  --color-green: #6f8f72;
+  --color-green-dark: #314f37;
+  --color-green-deep: #1f3828;
+  --color-border: rgba(89, 118, 91, 0.18);
+  --color-shadow: rgba(54, 76, 58, 0.12);
+  --radius-card: 30px;
+  --radius-pill: 999px;
+  --container-width: 1120px;
+  --font-scale: 1;
+
+  font-size: calc(16px * var(--font-scale));
+}
