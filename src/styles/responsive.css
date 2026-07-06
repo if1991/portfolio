@@ -147,6 +147,63 @@
     transform: translateY(36px);
   }
 }
+@media (max-width: 900px) {
+  .project-preview--fleet-art {
+    min-height: 300px;
+    padding: 22px;
+  }
+
+  .project-preview-fleet-visual {
+    min-height: 240px;
+  }
+
+  .fleet-car-card {
+    min-width: 190px;
+    padding: 24px 22px 20px;
+  }
+
+  .fleet-car-emoji {
+    font-size: 2.8rem;
+  }
+
+  .fleet-mini-badge--top {
+    top: 14px;
+    right: 10px;
+  }
+
+  .fleet-mini-badge--middle {
+    left: 10px;
+    top: 40%;
+  }
+
+  .fleet-mini-badge--bottom {
+    right: 20px;
+    bottom: 56px;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-preview--fleet-art {
+    min-height: 260px;
+  }
+
+  .fleet-mini-badge {
+    font-size: 0.82rem;
+    padding: 8px 12px;
+  }
+
+  .fleet-car-card {
+    min-width: 170px;
+  }
+
+  .fleet-car-title {
+    font-size: 1.08rem;
+  }
+
+  .fleet-car-subtitle {
+    font-size: 0.86rem;
+  }
+}
 
 /* =========================================================
    Smartphone
@@ -182,7 +239,7 @@
     padding: 24px;
   }
 
-  /* Neue About-Karten */
+  /*About-Karten */
   .about-card-layout,
   .about-card-small-grid {
     grid-template-columns: 1fr;

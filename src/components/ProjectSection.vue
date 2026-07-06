@@ -117,7 +117,7 @@
         </div>
 
         <p class="project-demo-note">
-          Hinweis: Beim ersten Öffnen kann das kostenlose
+          Hinweis: Beim ersten Öffnen kann das
           Backend einige Sekunden zum Starten benötigen.
         </p>
       </div>
@@ -132,25 +132,32 @@
 
       <!-- Vorschau des Abschlussprojekts -->
       <a
-        class="project-preview project-preview--fleet"
-        href="#fleet-case-study"
-        aria-label="Zur ausführlichen Fleet-Manager-Case-Study springen"
-      >
-        <img
-          src="/case-study/01dashboard.png"
-          alt="Dashboard des Fleet Managers mit Fahrzeugkalender"
-          loading="lazy"
-        >
+  class="project-preview project-preview--fleet-art"
+  href="#fleet-case-study"
+  aria-label="Zur ausführlichen Fleet-Manager-Case-Study springen"
+>
+  <div
+    class="project-preview-fleet-visual"
+    aria-hidden="true"
+  >
+    <div class="fleet-road"></div>
 
-        <span class="project-case-badge">
-          <span aria-hidden="true">◆</span>
-          Case Study
-        </span>
+    <div class="fleet-car-card">
+      <span class="fleet-car-emoji">🚗</span>
+      <span class="fleet-car-title">Fleet Manager</span>
+      <span class="fleet-car-subtitle">Fuhrpark, Buchungen, Wartung</span>
+    </div>
+  </div>
 
-        <span class="project-preview-hint">
-          Case Study ansehen ↓
-        </span>
-      </a>
+  <span class="project-case-badge">
+    <span aria-hidden="true">◆</span>
+    Case Study
+  </span>
+
+  <span class="project-preview-hint">
+    Case Study ansehen ↓
+  </span>
+</a>
 
       <!-- Kurzbeschreibung und Technologien -->
       <div class="project-text">

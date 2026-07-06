@@ -748,3 +748,249 @@
     font-size: 0.78rem;
   }
 }
+/* =========================================================
+   Fleet-Manager
+   ========================================================= */
+
+.project-preview--fleet-art {
+  position: relative;
+  display: flex;
+  min-height: 390px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 26px;
+  background:
+    radial-gradient(
+      circle at 76% 18%,
+      rgba(183, 211, 190, 0.58),
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      #f8f8f3 0%,
+      #ecefe8 100%
+    );
+  box-shadow: 0 24px 70px rgba(54, 76, 58, 0.14);
+  isolation: isolate;
+}
+
+.project-preview--fleet-art::before {
+  content: "Fuhrpark organisiert";
+  position: absolute;
+  top: 72px;
+  left: 38px;
+  z-index: 1;
+  color: var(--color-green-deep);
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+
+.project-preview--fleet-art::after {
+  content: "";
+  position: absolute;
+  left: -72px;
+  bottom: -92px;
+  width: 245px;
+  height: 245px;
+  border-radius: 50%;
+  background: rgba(205, 224, 199, 0.42);
+  z-index: 0;
+}
+
+.project-preview-fleet-visual {
+  position: relative;
+  z-index: 2;
+  width: 330px;
+  height: 235px;
+}
+
+.fleet-road {
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  bottom: 34px;
+  height: 14px;
+  border-radius: 999px;
+  background: rgba(61, 81, 68, 0.13);
+}
+
+.fleet-road::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  transform: translateY(-50%);
+  background:
+    repeating-linear-gradient(
+      to right,
+      rgba(61, 81, 68, 0.35) 0 18px,
+      transparent 18px 34px
+    );
+}
+
+.fleet-car-card {
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  display: flex;
+  min-width: 230px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 28px 26px 24px;
+  border: 1px solid rgba(62, 85, 67, 0.1);
+  border-radius: 28px;
+  background: rgba(255, 253, 246, 0.93);
+  box-shadow: 0 22px 42px rgba(54, 76, 58, 0.14);
+  transform: translate(-50%, -50%);
+}
+
+.fleet-car-emoji {
+  font-size: 3.6rem;
+  line-height: 1;
+}
+
+.fleet-car-title {
+  color: var(--color-green-deep);
+  font-size: 1.22rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.fleet-car-subtitle {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.fleet-mini-badge {
+  position: absolute;
+  z-index: 3;
+  padding: 9px 13px;
+  border: 1px solid rgba(62, 85, 67, 0.1);
+  border-radius: 999px;
+  background: rgba(255, 253, 246, 0.94);
+  color: var(--color-green-deep);
+  box-shadow: 0 10px 24px rgba(54, 76, 58, 0.09);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.fleet-mini-badge--top {
+  top: 24px;
+  right: 20px;
+}
+
+.fleet-mini-badge--middle {
+  left: 18px;
+  top: 43%;
+}
+
+.fleet-mini-badge--bottom {
+  right: 42px;
+  bottom: 68px;
+}
+
+.project-preview--fleet-art .project-case-badge,
+.project-preview--fleet-art .project-preview-hint {
+  z-index: 5;
+}
+
+/* Dark Mode */
+
+:root.dark-mode .project-preview--fleet-art {
+  background:
+    radial-gradient(
+      circle at 76% 18%,
+      rgba(116, 145, 119, 0.34),
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      #17241b 0%,
+      #253628 100%
+    );
+}
+
+:root.dark-mode .project-preview--fleet-art::before {
+  color: #f7f1e4;
+  opacity: 0.82;
+}
+
+:root.dark-mode .project-preview--fleet-art::after {
+  background: rgba(118, 151, 124, 0.24);
+}
+
+:root.dark-mode .fleet-car-card,
+:root.dark-mode .fleet-mini-badge {
+  background: rgba(255, 253, 246, 0.94);
+}
+
+:root.dark-mode .fleet-car-title,
+:root.dark-mode .fleet-mini-badge {
+  color: #1f3929;
+}
+
+:root.dark-mode .fleet-car-subtitle {
+  color: #596b60;
+}
+
+/* Mobil */
+
+@media (max-width: 700px) {
+  .project-preview-fleet-visual {
+    width: 260px;
+    height: 205px;
+  }
+
+  .fleet-car-card {
+    min-width: 190px;
+    padding: 24px 20px 20px;
+  }
+
+  .fleet-car-emoji {
+    font-size: 3rem;
+  }
+
+  .fleet-car-title {
+    font-size: 1.08rem;
+  }
+
+  .fleet-car-subtitle {
+    font-size: 0.82rem;
+  }
+
+  .fleet-mini-badge {
+    padding: 8px 11px;
+    font-size: 0.76rem;
+  }
+
+  .fleet-mini-badge--top {
+    top: 16px;
+    right: 10px;
+  }
+
+  .fleet-mini-badge--middle {
+    left: 8px;
+    top: 42%;
+  }
+
+  .fleet-mini-badge--bottom {
+    right: 20px;
+    bottom: 55px;
+  }
+
+  .project-preview--fleet-art::before {
+    top: 62px;
+    left: 26px;
+    font-size: 0.78rem;
+  }
+}
