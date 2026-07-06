@@ -7,6 +7,8 @@
     <ProjectSection />
     <ContactSection />
   </main>
+
+  <Footer />
 </template>
 
 <script setup lang="ts">
@@ -16,4 +18,5 @@ import AboutSection from './components/AboutSection.vue'
 import SkillsSection from './components/SkillsSection.vue'
 import ProjectSection from './components/ProjectSection.vue'
 import ContactSection from './components/ContactSection.vue'
+import Footer from './components/Footer.vue'
 </script>
