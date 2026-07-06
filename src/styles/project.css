@@ -275,6 +275,7 @@
   .project-preview img {
     min-height: 280px;
   }
+  
 }
 
 @media (max-width: 560px) {
@@ -563,4 +564,187 @@
   font-size: 1.1rem;
   box-shadow: 0 8px 20px rgba(217, 75, 75, 0.25);
   flex-shrink: 0;
+}
+/* =========================================================
+   Mini-Bibliothek: grafische Bücher-Vorschau
+   ========================================================= */
+
+.project-preview--books {
+  position: relative;
+  display: flex;
+  min-height: 390px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 24% 20%,
+      rgba(205, 224, 199, 0.55),
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      #fbfaf5 0%,
+      #eee9df 100%
+    );
+  isolation: isolate;
+}
+
+.project-preview--books::before {
+  content: "Digitale Bücherwelt";
+  position: absolute;
+  top: 72px;
+  left: 38px;
+  z-index: 1;
+  color: var(--color-green-deep);
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+
+.project-preview--books::after {
+  content: "";
+  position: absolute;
+  right: -70px;
+  bottom: -90px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: rgba(199, 219, 188, 0.35);
+  z-index: 0;
+}
+
+.project-preview-books {
+  position: relative;
+  z-index: 2;
+  width: 310px;
+  height: 230px;
+  margin-top: 28px;
+}
+
+.preview-book {
+  position: absolute;
+  bottom: 34px;
+  width: 96px;
+  height: 145px;
+  border: 1px solid rgba(42, 59, 47, 0.1);
+  border-radius: 12px 8px 8px 12px;
+  box-shadow:
+    0 22px 38px rgba(43, 64, 49, 0.16),
+    inset 8px 0 0 rgba(255, 255, 255, 0.24);
+}
+
+.preview-book::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 46px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.preview-book::after {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: 18px;
+  width: 58px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.32);
+}
+
+.preview-book--left {
+  left: 18px;
+  transform: rotate(-12deg);
+  background: linear-gradient(160deg, #9fb89b, #6f8f76);
+}
+
+.preview-book--middle {
+  left: 105px;
+  bottom: 48px;
+  z-index: 3;
+  width: 104px;
+  height: 164px;
+  transform: rotate(1deg);
+  background: linear-gradient(160deg, #d9c4ba, #b98f82);
+}
+
+.preview-book--right {
+  right: 16px;
+  transform: rotate(12deg);
+  background: linear-gradient(160deg, #d6b56f, #a47a39);
+}
+
+.preview-book-shadow {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  z-index: 1;
+  width: 230px;
+  height: 26px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: rgba(49, 65, 53, 0.16);
+  filter: blur(9px);
+}
+
+
+.project-preview--books .project-live-badge,
+.project-preview--books .project-preview-hint {
+  z-index: 5;
+}
+
+
+:root.dark-mode .project-preview--books {
+  background:
+    radial-gradient(
+      circle at 24% 20%,
+      rgba(116, 145, 119, 0.32),
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      #17241b 0%,
+      #253628 100%
+    );
+}
+
+:root.dark-mode .project-preview--books::before {
+  color: #f7f1e4;
+  opacity: 0.82;
+}
+
+:root.dark-mode .project-preview--books::after {
+  background: rgba(118, 151, 124, 0.24);
+}
+
+/* Mobil */
+
+@media (max-width: 700px) {
+  .project-preview-books {
+    width: 245px;
+    height: 190px;
+  }
+
+  .preview-book {
+    width: 76px;
+    height: 118px;
+  }
+
+  .preview-book--middle {
+    left: 82px;
+    width: 84px;
+    height: 134px;
+  }
+
+  .project-preview--books::before {
+    top: 62px;
+    left: 26px;
+    font-size: 0.78rem;
+  }
 }

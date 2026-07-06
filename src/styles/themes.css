@@ -504,25 +504,10 @@
     0 28px 64px rgba(0, 0, 0, 0.42);
 }
 
-:root.dark-mode .hero-info-card {
-  border-color: rgba(255, 255, 255, 0.12);
-  background: rgba(246, 243, 234, 0.97);
-  color: #1f3929;
-  box-shadow:
-    0 20px 46px rgba(0, 0, 0, 0.38);
-}
-
 :root.dark-mode .hero-info-label {
   color: #68786e;
 }
 
-:root.dark-mode .hero-info-card h3 {
-  color: #1f3929;
-}
-
-:root.dark-mode .hero-info-card p {
-  color: #53655a;
-}
 
 /* =========================================================
    Kontrastmodus

@@ -29,27 +29,28 @@
       </p>
 
       <a
-        class="project-preview"
-        href="https://mini-bibliothek-fullstack.vercel.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Mini-Bibliothek als Live-Projekt öffnen"
-      >
-        <img
-          src="/projects/mini-bibliothek.png"
-          alt="Startseite der live veröffentlichten Mini-Bibliothek"
-          loading="lazy"
-        >
+  class="project-preview project-preview--books"
+  href="https://mini-bibliothek-fullstack.vercel.app/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Mini-Bibliothek als Live-Projekt öffnen"
+>
+  <div class="project-preview-books" aria-hidden="true">
+    <div class="preview-book preview-book--left"></div>
+    <div class="preview-book preview-book--middle"></div>
+    <div class="preview-book preview-book--right"></div>
+    <div class="preview-book-shadow"></div>
+  </div>
 
-        <span class="project-live-badge">
-          <span aria-hidden="true">●</span>
-          Live
-        </span>
+  <span class="project-live-badge">
+    <span aria-hidden="true">●</span>
+    Live
+  </span>
 
-        <span class="project-preview-hint">
-          Projekt öffnen ↗
-        </span>
-      </a>
+  <span class="project-preview-hint">
+    Projekt öffnen ↗
+  </span>
+</a>
 
       <div class="project-text">
         <h3 class="project-title-with-icon">

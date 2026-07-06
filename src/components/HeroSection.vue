@@ -33,19 +33,10 @@
 
         <div class="hero-photo-frame">
           <img
-            src="/images/inga-portrait.png"
+            src="/images/inga3.jpg"
             alt="Portraitfoto von Inga Faber"
             class="hero-photo"
           />
-        </div>
-
-        <div class="hero-info-card">
-          <p class="hero-info-label">Mein Fokus</p>
-           <h3>Lernen, gestalten, weiterentwickeln</h3>
-            <p>
-             Ich interessiere mich für Frontend, kreative Benutzeroberflächen
-             und praktische Projekte, bei denen ich mich fachlich weiterentwickeln kann.
-           </p>
         </div>
       </div>
     </div>
