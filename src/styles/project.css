@@ -904,6 +904,288 @@
   z-index: 5;
 }
 
+/* MüllBuddy */
+
+.project-preview--muellbuddy {
+  position: relative;
+  display: flex;
+  min-height: 390px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 26px;
+  background:
+    radial-gradient(
+      circle at 26% 22%,
+      rgba(190, 225, 196, 0.58),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 82% 78%,
+      rgba(225, 204, 139, 0.26),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #fbfaf5 0%,
+      #eef4e7 100%
+    );
+  box-shadow: 0 24px 70px rgba(54, 76, 58, 0.14);
+  isolation: isolate;
+}
+
+.project-preview--muellbuddy::before {
+  content: "Mülltrennung im Aufbau";
+  position: absolute;
+  top: 72px;
+  left: 38px;
+  z-index: 1;
+  color: var(--color-green-deep);
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+
+.project-preview--muellbuddy::after {
+  content: "";
+  position: absolute;
+  right: -70px;
+  bottom: -92px;
+  width: 245px;
+  height: 245px;
+  border-radius: 50%;
+  background: rgba(205, 224, 199, 0.42);
+  z-index: 0;
+}
+
+.muellbuddy-preview {
+  position: relative;
+  z-index: 2;
+  width: 340px;
+  height: 245px;
+  margin-top: 32px;
+}
+
+.muellbuddy-card {
+  position: absolute;
+  left: 50%;
+  top: 49%;
+  z-index: 3;
+  display: flex;
+  min-width: 230px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 28px 26px 24px;
+  border: 1px solid rgba(62, 85, 67, 0.1);
+  border-radius: 28px;
+  background: rgba(255, 253, 246, 0.94);
+  box-shadow: 0 22px 42px rgba(54, 76, 58, 0.14);
+  transform: translate(-50%, -50%);
+}
+
+.muellbuddy-icon {
+  font-size: 3.4rem;
+  line-height: 1;
+}
+
+.muellbuddy-title {
+  color: var(--color-green-deep);
+  font-size: 1.24rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.muellbuddy-subtitle {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.muellbuddy-bin {
+  position: absolute;
+  z-index: 2;
+  padding: 9px 13px;
+  border: 1px solid rgba(62, 85, 67, 0.1);
+  border-radius: 999px;
+  background: rgba(255, 253, 246, 0.94);
+  color: var(--color-green-deep);
+  box-shadow: 0 10px 24px rgba(54, 76, 58, 0.09);
+  font-size: 0.82rem;
+  font-weight: 850;
+}
+
+.muellbuddy-bin--yellow {
+  top: 28px;
+  right: 18px;
+}
+
+.muellbuddy-bin--paper {
+  left: 10px;
+  top: 45%;
+}
+
+.muellbuddy-bin--special {
+  right: 30px;
+  bottom: 48px;
+}
+
+.muellbuddy-orbit {
+  position: absolute;
+  border: 1px dashed rgba(62, 85, 67, 0.2);
+  border-radius: 999px;
+  z-index: 1;
+}
+
+.muellbuddy-orbit--top {
+  inset: 22px 34px 52px;
+  transform: rotate(-10deg);
+}
+
+.muellbuddy-orbit--bottom {
+  inset: 54px 16px 26px;
+  transform: rotate(12deg);
+}
+
+.project-progress-badge {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 13px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  background: var(--color-card-strong);
+  color: var(--color-green-deep);
+  box-shadow: 0 12px 30px rgba(54, 76, 58, 0.16);
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-progress-badge span {
+  color: var(--color-green-deep);
+}
+
+.project-button--disabled {
+  cursor: default;
+  opacity: 0.72;
+  pointer-events: none;
+}
+
+.project-preview--muellbuddy .project-preview-hint {
+  z-index: 5;
+}
+:root.dark-mode .project-preview--muellbuddy {
+  background:
+    radial-gradient(
+      circle at 26% 22%,
+      rgba(116, 145, 119, 0.34),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 82% 78%,
+      rgba(214, 181, 111, 0.15),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #17241b 0%,
+      #253628 100%
+    );
+}
+
+:root.dark-mode .project-preview--muellbuddy::before {
+  color: #f7f1e4;
+  opacity: 0.82;
+}
+
+:root.dark-mode .project-preview--muellbuddy::after {
+  background: rgba(118, 151, 124, 0.24);
+}
+
+:root.dark-mode .muellbuddy-card,
+:root.dark-mode .muellbuddy-bin,
+:root.dark-mode .project-progress-badge {
+  background: rgba(255, 253, 246, 0.94);
+}
+
+:root.dark-mode .muellbuddy-title,
+:root.dark-mode .muellbuddy-bin,
+:root.dark-mode .project-progress-badge {
+  color: #1f3929;
+}
+
+:root.dark-mode .muellbuddy-subtitle {
+  color: #596b60;
+}
+
+:root.dark-mode .muellbuddy-orbit {
+  border-color: rgba(255, 253, 246, 0.24);
+}
+
+@media (max-width: 700px) {
+  .muellbuddy-preview {
+    width: 260px;
+    height: 205px;
+  }
+
+  .muellbuddy-card {
+    min-width: 190px;
+    padding: 24px 20px 20px;
+  }
+
+  .muellbuddy-icon {
+    font-size: 3rem;
+  }
+
+  .muellbuddy-title {
+    font-size: 1.08rem;
+  }
+
+  .muellbuddy-subtitle,
+  .muellbuddy-bin {
+    font-size: 0.78rem;
+  }
+
+  .muellbuddy-bin {
+    padding: 8px 11px;
+  }
+
+  .muellbuddy-bin--yellow {
+    top: 18px;
+    right: 8px;
+  }
+
+  .muellbuddy-bin--paper {
+    left: 6px;
+  }
+
+  .muellbuddy-bin--special {
+    right: 12px;
+    bottom: 44px;
+  }
+
+  .project-preview--muellbuddy::before {
+    top: 62px;
+    left: 26px;
+    font-size: 0.78rem;
+  }
+
+  .project-progress-badge {
+    top: 12px;
+    left: 12px;
+  }
+}
+
 /* Dark Mode */
 
 :root.dark-mode .project-preview--fleet-art {

@@ -123,11 +123,117 @@
       </div>
     </div>
 
-    <!-- Projekt 02: Fleet Manager -->
+   <!-- Projekt 02: MüllBuddy -->
+<div class="project-card project-card--media project-card--muellbuddy">
+  <p class="project-number">
+    02
+  </p>
+
+  <a
+    class="project-preview project-preview--muellbuddy"
+    href="https://github.com/if1991/muellbuddy"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="MüllBuddy auf GitHub öffnen"
+  >
+    <div
+      class="muellbuddy-preview"
+      aria-hidden="true"
+    >
+      <div class="muellbuddy-orbit muellbuddy-orbit--top"></div>
+      <div class="muellbuddy-orbit muellbuddy-orbit--bottom"></div>
+
+      <div class="muellbuddy-card">
+        <span class="muellbuddy-icon">♻️</span>
+        <span class="muellbuddy-title">MüllBuddy</span>
+        <span class="muellbuddy-subtitle">C# API · MySQL · Vue</span>
+      </div>
+    </div>
+
+    <span class="project-progress-badge">
+      <span aria-hidden="true">◆</span>
+      In Entwicklung
+    </span>
+
+    <span class="project-preview-hint">
+      GitHub öffnen ↗
+    </span>
+  </a>
+
+  <div class="project-text">
+    <h3 class="project-title-with-icon">
+      <span
+        class="project-title-icon"
+        aria-hidden="true"
+      >
+        ♻️
+      </span>
+
+      MüllBuddy
+    </h3>
+
+    <p>
+      MüllBuddy ist eine Web-App, die bei der richtigen
+      Mülltrennung helfen soll. Nutzer können einen Gegenstand
+      wie Batterie, Zeitung oder Joghurtbecher suchen und
+      erhalten die passende Entsorgungskategorie mit Erklärung.
+    </p>
+
+    <p>
+      Das Projekt befindet sich aktuell in Entwicklung. Die
+      C#-API mit ASP.NET Core Minimal API, Entity Framework Core
+      und MySQL ist bereits angebunden; das Vue-Frontend wird
+      Schritt für Schritt aufgebaut.
+    </p>
+
+    <div class="project-tags project-tags-with-icons">
+      <span
+        v-for="tag in muellBuddyTags"
+        :key="tag.name"
+        class="project-tech-tag"
+      >
+        <img
+          :src="tag.icon"
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+        >
+
+        {{ tag.name }}
+      </span>
+    </div>
+
+    <div class="project-actions">
+      <a
+        href="https://github.com/if1991/muellbuddy"
+        class="button primary-button"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Code auf GitHub
+      </a>
+
+      <span
+        class="button secondary-button project-button--disabled"
+        aria-label="Live-Demo folgt später"
+      >
+        Live-Demo folgt
+      </span>
+    </div>
+
+    <p class="project-demo-note">
+      Hinweis: Das Projekt ist noch nicht fertig und wird aktuell
+      als Lern- und Portfolio-Projekt erweitert.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Projekt 03: Fleet Manager -->
 
     <div class="project-card project-card--media project-card--fleet">
       <p class="project-number">
-        02
+        03
       </p>
 
       <!-- Vorschau des Abschlussprojekts -->
@@ -417,6 +523,29 @@ const fullstackTags: ProjectTag[] = [
   {
     name: 'MongoDB',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg',
+  },
+]
+/* Technologien für MüllBuddy */
+const muellBuddyTags: ProjectTag[] = [
+  {
+    name: 'C#',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
+  },
+  {
+    name: 'ASP.NET Core',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg',
+  },
+  {
+    name: 'MySQL',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg',
+  },
+  {
+    name: 'Vue 3',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg',
+  },
+  {
+    name: 'TypeScript',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
   },
 ]
 
