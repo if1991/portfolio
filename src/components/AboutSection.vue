@@ -35,12 +35,13 @@
           <h3 class="about-card-label">Aktueller Stand</h3>
 
           <p>
-        Ich habe mich zur Fachinformatikerin für Anwendungsentwicklung umschulen lassen und befinde mich aktuell in der Abschlussphase. 
-        Während meiner Umschulung, im Praktikum und durch eigene kleine Projekte konnte ich 
-        Grundlagen und praktische Erfahrungen in verschiedenen Bereichen sammeln.
+        Ich bin Fachinformatikerin für Anwendungsentwicklung mit IHK-Abschluss und habe durch meine Ausbildung, 
+        ein zehnmonatiges Praktikum und eigene Projekte praktische Erfahrung in der Webentwicklung gesammelt.
+        Besonders intensiv habe ich mit Vue 3, TypeScript, GraphQL und MongoDB gearbeitet.
 
-        Dazu gehören unter anderem HTML, CSS, JavaScript, SQL sowie Grundlagen in Java und C. 
-        Im Praktikum und Abschlussprojekt habe ich zusätzlich mit Vue, TypeScript, GraphQL und MongoDB gearbeitet.
+        Zusätzlich bringe ich Kenntnisse in HTML, CSS, JavaScript, SQL sowie Grundlagen in Java und C mit.
+        Neue Technologien eigne ich mir gerne eigenständig an und erweitere mein Wissen aktuell unter anderem
+        im Bereich C# und ASP.NET Core.
           </p>
         </article>
 

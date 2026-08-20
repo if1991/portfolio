@@ -10,15 +10,17 @@
         <h1>Inga Faber</h1>
 
         <p class="hero-subtitle">
-          Angehende Fachinformatikerin für Anwendungsentwicklung mit Interesse an
-          Webentwicklung, technischen Lösungen und kreativen Benutzeroberflächen.
+          Fachinformatikerin für Anwendungsentwicklung mit Schwerpunkt auf moderner Webentwicklung,
+          Full-Stack-Anwendungen und benutzerfreundlichen Oberflächen.
         </p>
 
         <p class="hero-description">
-          Angefangen hat alles mit kleinen HTML- und CSS-Projekten aus Spaß.
-          Daraus wurde Schritt für Schritt der Wunsch, tiefer in die
-          Softwareentwicklung einzusteigen. Heute befinde ich mich in der
-          Abschlussphase meiner Umschulung und möchte meine Kenntnisse weiter ausbauen.
+          Angefangen hat alles mit kleinen HTML- und CSS-Projekten aus Spaß. 
+          Daraus wurde Schritt für Schritt der Wunsch, tiefer in die Softwareentwicklung einzusteigen. 
+          Heute bin ich Fachinformatikerin für Anwendungsentwicklung mit IHK-Abschluss und entwickle
+          Webanwendungen mit Vue 3, TypeScript, Node.js und modernen Webtechnologien. 
+          Meine Kenntnisse erweitere ich kontinuierlich durch eigene Projekte und aktuell unter 
+          anderem im Bereich C# und ASP.NET Core.
         </p>
 
         <div class="hero-actions">
